@@ -4,10 +4,10 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>Let's use SVG - Quinton Jason Jr</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="author" content="Quinton Jason Jr">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -42,41 +42,41 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>
-					<h1>Reveal.js</h1>
-					<h3>HTML Presentations Made Easy</h3>
+				<!--SLIDE 1-->
+				<section data-background="#70bf40" data-background-transition="slide" class="main-topic">
+					<h1>Let's <code class="title_code">&lt;use&gt;</code> SVG</h1>
 					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+						<a href="http://quintonjason.com">Quinton Jason Jr</a> - <a href="http://twitter.com/quintonjasonjr">@quintonjasonjr</a>
 					</p>
 				</section>
 
+				<!--SLIDE 2-->
 				<section>
-					<h2>Heads Up</h2>
-					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.
-					</p>
+					<h2>Lead Web Developer</h2>
+					<div class="solo-image">
+						<a href="http://zalandas.com"><img src="img/zalandas_icon_black.svg" alt="Zalandas Logo"/></a>
+					</div>
 
 					<aside class="notes">
 						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
 					</aside>
 				</section>
-
+				
 				<!-- Example of nested vertical slides -->
 				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#" class="navigate-down">down</a>.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
+					<section data-background="#70bf40" data-background-transition="slide" class="main-topic">
+						<h2>WHY SVG?</h2>
 					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
+					<section data-background="img/multiple-devices.jpg" data-background-transition="slide">
+					</section>
+					<section >
+						<ul>
+							<li class="fragment">Resolution Indepence</li>
+							<li class="fragment">Small File Size</li>
+							<li class="fragment">Accessibility</li>
+							<li class="fragment">Interactivity</li>
+							<li class="fragment">Filters and Blend Modes</li>
+						</ul>
 					</section>
 					<section>
 						<h2>Basement Level 2</h2>
@@ -139,18 +139,19 @@
 
 				<section data-markdown>
 					<script type="text/template">
-						## Markdown support
+						/*## Markdown support
 
 						For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-
+						<!--/*
 						```
 						<section data-markdown>
 						  ## Markdown support
 
 						  For those of you who like that sort of thing.
 						  Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
+						</section> 
+						``` 
+						*/
 					</script>
 				</section>
 
