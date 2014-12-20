@@ -63,12 +63,16 @@
 				</section>
 				
 				<!-- Example of nested vertical slides -->
+				<!-- WHY SVG -->
 				<section>
+					<!-- SLIDE 3 -->
 					<section data-background="#70bf40" data-background-transition="slide" class="main-topic">
 						<h2>WHY SVG?</h2>
 					</section>
+					<!-- SLIDE 4 -->
 					<section data-background="img/multiple-devices.jpg" data-background-transition="slide">
 					</section>
+					<!-- SLIDE 5 -->
 					<section >
 						<ul>
 							<li class="fragment">Resolution Indepence</li>
@@ -78,12 +82,15 @@
 							<li class="fragment">Filters and Blend Modes</li>
 						</ul>
 					</section>
+					<!-- SLIDE 6 -->
 					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
-						</a>
+						<h2>Accessible</h2>
+						<ul>
+							<li>svg</li>
+							<li>title - desc</li>
+							<li>text</li>
+							<li>ARIA role</li>
+						</ul>
 					</section>
 					<section>
 						<h2>Basement Level 3</h2>
@@ -370,9 +377,11 @@ function linkify( selector ) {
 				progress: true,
 				history: true,
 				center: true,
+				transition: 'linear',
+				backgroundTransition: 'slide',
 
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
 
 				// Parallax scrolling
 				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
