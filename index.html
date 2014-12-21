@@ -92,14 +92,164 @@
 							<li>ARIA role</li>
 						</ul>
 					</section>
+					<!-- SLIDE 7 -->
 					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
+						<h3 class="red">213 KB</h3>
+						<img src="img/Fishadelic.jpg" />
+						<p class="red">fishadelic.jpg</p>
 					</section>
-				</section>
+					<!-- SLIDE 8 -->
+					<section>
+						<h3 class="red">19 KB</h3>
+						<img src="img/Fishadelic.svg" />
+						<p class="red">fishadelic.svg</p>
+					</section>
+					<!-- SLIDE 9 -->
+					<section>
+						<h3>GZIP Compression</h3>
+						<img src="img/svg_compression_average.jpg" />
+					</section>
+					<!-- SLIDE 10 -->
+					<section>
+						<h3 class="red">3.8 KB</h3>
+						<img src="img/Fishadelic.svg" />
+						<p class="red">fishadelic.svg - GZIPPED</p>
+					</section>
+					<!-- SLIDE 11 -->
+					<section>
+						<h2>Shapes</h2>
+						<pre><code>
+&lt;rect /&gt;
+						</code></pre>
+					</section>
+					<!-- SLIDE 12 -->
+					<section>
+						<img src="img/svg_basic_support.jpg" alt="SVG support">
+					</section>
+					<!-- SLIDE 13 -->
+					<section>
+						<img src="img/svg-ie-android.png" alt="Global Internet Explorer and Android support">
+					</section>
+				</section> <!-- END WHY SVG -->
+
+				<section> <!-- CREATING SVG -->
+					<!-- SLIDE 14 -->
+					<section data-background="#70bf40" data-background-transition="slide" class="main-topic">
+						<h2>CREATING SVG</h2>
+					</section>
+
+				</section> <!-- END CREATING SVG -->
+				
+				<section> <!-- EMBEDDING SVG -->
+					<section data-background="#70bf40" data-background-transition="slide" class="main-topic">
+						<h2>EMBEDDING SVG</h2>
+					</section>
+					<section>
+						<h3>SVG as HTML IMG</h3>
+						<pre><code>
+<img src="fishadelic.svg"
+	 alt="My psychedelic fish" />
+						</code></pre>
+						<img src="img/svg_html_img.jpg" height="497" width="1165" alt="">
+					</section>
+
+					<section>
+						<h3>SVG as CSS Background</h3>
+						<pre><code>
+.some-class {
+	background: url('fishadelic.jpg');
+	background-image: url('fishadelic.svg', none);
+	background-size: cover;
+}
+						</code></pre>
+						<img src="img/svg_css_background.jpg" height="497" width="1165" alt="" />
+					</section>
+					<section>
+						<h3>&lt;object&gt;</h3>
+						<pre><code>
+<object data="img/Fishadelic.svg" type="image/svg+xml">
+	<!-- img fallback to png -->
+</object>
+						</code></pre>
+					</section>
+					<section>
+						<h3>&lt;iframe&gt;</h3>
+						<pre><code>
+<iframe src="img/Fishadelic.svg">
+	<!-- img fallback to png -->
+</iframe>
+						</code></pre>
+					</section>
+					<section>
+						<h3>&lt;embed&gt;</h3>
+						<pre><code>
+<embed src="img/Fishadelic.svg" type="image/svg+xml">
+						</code></pre>
+					</section>
+				</section> <!-- EMBEDDING SVG -->
+
+				<section> <!-- STYLING SVG -->
+
+					<section data-background="#70bf40" data-background-transition="slide" class="main-topic">
+						<h2>STYLING SVG</h2>
+					</section>
+					<section>
+						<h3>Presentation Attributes</h3>
+						<pre><code>
+<svg xmlns="http://www.w3.org/2000/svg">
+	<rect x="500" y="250" width="600" height="300"
+		fill="green" stroke="blue" stroke-width="5"
+		/>
+</svg>
+						</code></pre>
+					</section>
+					<section>
+						<h3>Inline CSS</h3>
+						<pre><code data-trim>
+<svg xmlns="http://www.w3.org/2000/svg">
+	<rect x="500" y="250" width="600" height="300"
+		style="fill: green; stroke: blue; stroke-width: 3;"
+		/>
+</svg>
+						</code></pre>
+					</section>
+					<section>
+						<pre><code>
+<?xml-stylesheet href="style.css" type="text/css"?>
+<svg xmlns="http://www.w3.org/2000/svg">
+	<rect .../>
+</svg>
+						</code></pre>
+					</section>
+
+				</section> <!-- END STYLING SVG -->
+
+				<section> <!-- Responsive SVG -->
+					
+					<section data-background="#70bf40" data-background-transition="slide" class="main-topic">
+						<h2>RESPONSIVE SVG</h2>
+					</section>
+					<section>
+						<pre><code>
+.some-class {
+	background-image: url('fishadelic.svg', none);
+	background-size: cover;
+}							
+						</code></pre>
+					</section>
+					<section data-background="img/cock-blocker-internet-explorer.svg">
+					</section>
+
+					<section>
+						<h3>&lt;img&gt;</h3>
+						<pre><code>
+.img {
+	width: 100%; <!-- IE fix -->
+}
+						</code></pre>
+					</section>
+
+				</section> <!-- END RESPONSIVE SVG -->
 
 				<section>
 					<h2>Slides</h2>

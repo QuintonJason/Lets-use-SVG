@@ -167,4 +167,8 @@ body {
  section div.solo-image {
   width: 50%;
   margin: 0 auto;
+
+ }
+ .red {
+  color: #ff0000;
  }
