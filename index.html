@@ -242,14 +242,93 @@
 
 					<section>
 						<h3>&lt;img&gt;</h3>
-						<pre><code>
+						<pre><code class="css">
 .img {
 	width: 100%; <!-- IE fix -->
 }
 						</code></pre>
 					</section>
 
+					<section>
+						<h3>&lt;object&gt;</h3>
+						<pre><code class="css">
+object {
+	width: 100%; <!-- IE fix -->
+}
+						</code></pre>
+					</section>
+					
+					<section>
+					<h3>Padding Hack</h3>
+						<ol>
+							<li>Remove height/width</li>
+							<li>Set viewbox</li>
+							<li>Wrap SVG in container</li>
+							<li>Use Intrinsic Ratio for container</li>
+						</ol>
+					</section>
+					<section>
+						<h3>Intrinsic Ratio</h3>
+						<pre><code>
+.container {
+	height: 0; <!-- collapse height -->
+	width: desired width;
+	padding-top: (svg h/svg w) * desired width;
+	position: relative;
+}
+						</code></pre>
+					</section>
+
+					<section>
+						<h3>&lt;iframe&gt;</h3>
+						<pre><code>
+iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+						</code></pre>
+					</section>
+
+					<section>
+						<h3>&lt;svg&gt;</h3>
+						<pre><code>
+svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+						</code></pre>
+					</section>
+
+					<section>
+						<h3>Adaptive SVG</h3>
+						<img src="img/svg-mediaquery.gif" alt="Adaptive SVG">
+					</section>
+
 				</section> <!-- END RESPONSIVE SVG -->
+				
+				<section> <!-- INLINE SVG -->
+					
+					<section data-background="#70bf40" data-background-transition="slide" class="main-topic">
+						<h2>INLINE SVG</h2>
+					</section>
+
+					<section>
+						<img src="img/svg_inline_svg_support.jpg" alt="Inline SVG Support" />
+					</section>
+
+				</section> <!-- END INLINE SVG -->
+
+				<section> <!--SVG Animation -->
+				
+					<section data-background="#70bf40" data-background-transition="slide" class="main-topic">
+						<h2>SVG Animation</h2>
+					</section>
+
+				</section>
 
 				<section>
 					<h2>Slides</h2>
