@@ -172,3 +172,7 @@ body {
  .red {
   color: #ff0000;
  }
+ .slides {
+    width: 100%;
+    height: 100vh;
+ }
