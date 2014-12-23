@@ -7,7 +7,7 @@ These features coupled with the ability to use SVG as a font system make this el
 In this talk Quinton Jason will show us why we should use SVG, how to style SVG with CSS, and why we should use SVG as a font system.
 
 
-Built with [###reveal.js](http://lab.hakim.se/reveal-js/) [![Build Status](https://travis-ci.org/hakimel/reveal.js.svg?branch=master)](https://travis-ci.org/hakimel/reveal.js)
+Built with ###[reveal.js](http://lab.hakim.se/reveal-js/) [![Build Status](https://travis-ci.org/hakimel/reveal.js.svg?branch=master)](https://travis-ci.org/hakimel/reveal.js)
 
 ## License
 
